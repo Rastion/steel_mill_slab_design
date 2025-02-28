@@ -3,14 +3,18 @@
     "default_params": {
       "instance_file": "instances/12orderproblem.in"
     },
-    "problem_type": "Steel Mill Slab Design",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Steel mill slab design",
     "description": "In this problem, orders (each with a required weight and a color) must be assigned to slabs. A slab’s produced size is determined by the sum of the orders assigned to it, and the corresponding waste is computed by a pre-defined saw-tooth function. Each slab can contain orders of at most 2 colors and its total content cannot exceed the maximum available slab size. The goal is to minimize the total waste of steel.",
+    "link_to_dataset": "https://github.com/Rastion/steel_mill_slab_design/blob/main/instances/12orderproblem.in",
     "keywords": [
       "steel mill",
       "slab design",
       "waste minimization",
       "assignment",
-      "optimization"
+      "optimization",
+      "production-scheduling"
     ],
     "data_format": {
       "instance_file": {
@@ -29,12 +33,8 @@
       "description": "Minimize the total steel waste, where for each slab the waste is determined by the difference between the next available slab size and the slab’s content. Infeasible solutions (violating capacity or color constraints, or not forming a valid partition) are heavily penalized."
     },
     "solution_representation": "A list of slabs, each slab a list of order indices.",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search",
-      "rl_optimizer"
+    "formulations": [
+      ""
     ]
   }
   
